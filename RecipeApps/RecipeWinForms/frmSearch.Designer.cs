@@ -47,6 +47,7 @@
             this.tblMain.Controls.Add(this.tblSearch, 0, 0);
             this.tblMain.Controls.Add(this.gRecipe, 0, 1);
             this.tblMain.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tblMain.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.tblMain.Location = new System.Drawing.Point(0, 0);
             this.tblMain.Name = "tblMain";
             this.tblMain.RowCount = 2;

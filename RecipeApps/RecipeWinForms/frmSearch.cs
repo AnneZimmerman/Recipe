@@ -9,6 +9,8 @@ namespace RecipeWinForms
         {
             InitializeComponent();
             btnSearch.Click += BtnSearch_Click;
+            gRecipe.CellDoubleClick += GRecipe_CellDoubleClick;
+            FormatGrid();
         }
 
         private void SearchForRecipe(string recipename)
@@ -24,6 +26,19 @@ namespace RecipeWinForms
             int id = (int)gRecipe.Rows[rowindex].Cells["RecipeId"].Value;
             frmRecipe frm = new frmRecipe();
             frm.ShowForm(id);
+        }
+
+        private void FormatGrid()
+        {
+            gRecipe.AllowUserToAddRows = false;
+            gRecipe.ReadOnly = true;
+            gRecipe.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.AllCells;
+            gRecipe.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
+        }
+
+        private void GRecipe_CellDoubleClick(object? sender, DataGridViewCellEventArgs e)
+        {
+            ShowRecipeForm(e.RowIndex);
         }
 
         private void BtnSearch_Click(object? sender, EventArgs e)
