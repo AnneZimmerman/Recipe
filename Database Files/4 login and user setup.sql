@@ -1,4 +1,4 @@
---replace//loginname// and //password// with secret values from bault
+--replace//loginname// and //password// with secret values from vault
 --IMPORTANT create login in MASTER
 --use MASTER
 
