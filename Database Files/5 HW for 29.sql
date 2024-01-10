@@ -18,10 +18,10 @@ Here is the sample data:
 The server name is dev-heartyhearth
 
 SQL credentials are 
-    login: dev_login 
-        password: @@@HEArty111
+    login: //loggin// 
+        password: //password//
     user: dev_user
 
 AD user credentials:
-    username: cpudev@annezimmermanmailstack.onmicrosoft.com
-    password: Wuno8063
+    username: //loggin//
+    password: //password//
